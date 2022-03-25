@@ -1,0 +1,563 @@
+
+.nav{
+    background-color: white;
+    z-index: 9;
+    padding-left: 5px;
+    padding-right: 50px;
+    
+    display:flex;
+    box-shadow: 0px 4px 65px 5px #F79CE2;
+}
+.nav-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.logo{
+    float: left;
+    width: 60%;
+}
+.logo img{
+    padding: 10px;
+    border-radius: 50%;
+}
+.nav-side{
+    float: right;
+    width: 40%;  
+    margin-top: 20px;  
+}
+.nav-side a{
+    text-decoration: none;
+    margin-right: 20px;
+    color:#D3155D;
+    font-weight: 900;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 23px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+}
+.nav-side a:hover{
+    color:black;
+    text-decoration: underline;
+    transition: all 1s ease;
+    font-size: 25px;
+}
+
+
+.main{
+    background-image: url('images/img1\ \(1\).jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: 2px 2px 85px 0px #F79CE2;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.main .main-content{
+    padding-top: 150px;
+
+}
+.main .main-content h2{
+    color:#D3155D;
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+    font-weight: bolder;
+    text-align:  left ;
+    padding-top: 150px;
+    padding-left: 70px;
+}
+.main .main-content .btn{
+    margin-top: 50px;
+    padding-left: 80px;
+}
+.main .main-content .btn a{
+    text-decoration: none;
+    text-align: left;
+    padding-left: 80px;
+    margin: 50px;
+    padding: 10px 20px;
+    background-color: #f02277;
+    color: white;
+    font-family: cosmic, sans-serif;
+    border: 2px solid brown;
+    border-radius: 10px;
+} 
+.main .main-content .btn a:hover{
+    background-color: black;
+    color: palevioletred;
+    font-size: 20px;
+    padding: 15px ;
+    border-bottom: 4px solid #8c1c69;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+.product h2{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+}  
+.product .product-container{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.product .product-container .item{
+    width: 33.33%;
+    margin: 12px;
+    height: auto;
+    box-shadow: 0px 3px 65px 0px #F79CE2;
+}
+.product .product-container .item:hover{
+    box-shadow: 0px 3px 65px 0px black;
+
+
+}
+.product .product-container .item .item-image{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.product .product-container .item .item-content{
+    text-align: center;
+
+}
+.product .product-container .item .item-content h3{
+    font-size: 25px;
+    color: #D3155D;
+    font-family: 'Abril Fatface', cursive;
+}
+.product .product-container .item .item-content p{
+    font-size: 15px;
+    color: #57053d;
+    font-weight: bolder;
+    font-family: 'Abril Fatface', cursive;
+}
+.product .product-container .item .item-content a{
+    text-decoration: none;
+    text-align: left;
+    padding-left: 80px;
+    margin: 20px;
+    
+    padding: 5px 7px;
+    background-color: #f02277;
+    color: white;
+    font-family: cosmic, sans-serif;
+    border: 2px solid brown;
+    border-radius: 10px;
+}
+.product .product-container .item .item-content a:hover{
+    background-color: black;
+    color: palevioletred;
+    font-size: 20px;
+    border-bottom: 4px solid #8c1c69;
+    transition: 0.5s;
+}
+.product .product-btn{
+    text-align: center;
+    margin-top: 50px;
+}
+.product .product-btn a{
+    text-decoration: none;
+    text-align: left;
+    padding-left: 80px;
+    margin: 50px;
+    padding: 10px 20px;
+    background-color: #f02277;
+    color: white;
+    font-family: cosmic, sans-serif;
+    border: 2px solid brown;
+    border-radius: 10px;
+}
+.product .product-btn a:hover{
+    background-color: black;
+    color: palevioletred;
+    font-size: 20px;
+    padding: 15px ;
+    border-bottom: 4px solid #8c1c69;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+.keypoint{
+    padding: 50px;
+}
+.keypoint h2{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+
+}
+.keypoint .key-container{
+    display: flex;
+}
+.keypoint .key-container .key-content{
+    width: 50%;
+    padding: 20px;
+    float: left;
+}
+.keypoint .key-container .key-content li{
+    margin: 10px;
+     padding: 10px;
+    border-left: 2px solid purple;
+    color: black;
+    text-align: left;
+    font-family: cosmic, sans-serif;
+    box-shadow: 0px 3px 65px #F79CE2;
+}
+.keypoint .key-container .key-img{
+    width: 50%;
+    float: right;
+    margin-left: 240px;
+    margin-top: 25px ;
+}
+.keypoint .key-container .key-img img{
+    border-radius: 10px;
+    box-shadow: 0px 3px 65px #F79CE2;
+}
+.testi{
+    padding: 75px;
+    
+}
+.testi h2{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.testi .testi-container{
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 60px;
+    height: 650px;
+    text-align: center;
+    box-shadow: none;
+}
+.testi .testi-container .carousel-inner{
+    background-color: white;
+    box-shadow: none;
+    border-radius: 50px;
+}
+.testi .testi-container .carousel-inner .item{
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: none;
+}
+.testi .testi-container  .item .item-img{
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    overflow: hidden;
+}
+.testi .testi-container  .item .item-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 90px;
+    box-shadow: #F79CE2;
+}
+.testi .testi-container .item .item-content p{
+    font-size: 15px;
+    color: #57053d;
+    font-weight: bolder;
+    font-family: 'Abril Fatface', cursive;
+}
+.testi .testi-container .item .item-content h3{
+    font-size: 25px;
+    color: #57053d;
+    font-weight: bolder;
+    font-family: 'Abril Fatface', cursive;
+}
+.team{
+    padding: 50px;
+}
+.team h2{
+    color: black;
+    font-size: 35px;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    font-weight: bolder;
+}
+.team .team-container{
+    display: flex;
+}
+.team .team-container .team-video{
+    width: 50%;
+    padding: 20px;
+}
+.team .team-container .team-video video{
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0px 3px 65px 0px #F79CE2;
+    
+
+}
+.team .team-container .team-content{
+    width: 30%;
+    padding: 20px;
+
+    margin-left:50px ;
+}
+.team .team-container .key-content p{
+    padding: 16px;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+}
+.feed{
+    padding: 50px;
+    margin: 30px;
+    background: url('images/imgback.jpg');
+    background-size: cover;
+    box-shadow: 0px 3px 65px 0px #F79CE2;
+}
+.feed h2{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Abril Fatface', cursive;
+    color: black;
+}
+.feed .feed_form{
+    text-align: center;
+}
+
+.feed .feed_form form{
+    padding: 20px;
+}
+.feed .feed_form form input{
+    width: 30%;
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+
+}
+.feed .feed_form form textarea{
+    width: 30%;
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+
+}
+.feed .feed_form form button{
+    margin: 50px;
+    padding: 10px 20px;
+    background-color: purple;
+    color: pink;
+    font-family: cosmic, sans-serif;
+    border-radius: 10px;
+    border-bottom: 4px solid black;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+.about-us{
+    padding: 140px;
+}
+.about-us h2{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Abril Fatface', cursive;
+    color: purple;
+    text-decoration: underline;
+}
+.about-us p{
+    text-align: center;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+    color: black;
+}
+.contact-container{
+    padding: 165px;
+}
+.contact-container h2{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Abril Fatface', cursive;
+    color: purple;
+    text-decoration: underline;
+}
+.contact-container .g-map{
+    border: 5px solid #F73AA1;
+}
+.contact-container .contact-content{
+    padding: 10px;
+
+}
+.contact-container .contact-content{
+    text-align: center;
+    font-size: 19px;
+    font-family: cosmic, sans-serif;
+    color: black;
+}
+.item1{
+    padding:140px;
+}
+.item1 h2{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Abril Fatface', cursive;
+    color: purple;
+}
+.item1 .product  {
+    padding-right: 340px;
+}
+
+.login-page{
+    width: 360px;
+    margin: auto;
+    padding: 15% 0 0;
+
+}
+.login-page h2{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Abril Fatface', cursive;
+    color: purple;
+}
+.login-form{
+    padding: 20px;
+    margin:  0 auto 100px;
+    position: relative;
+    z-index: 1;
+    background: #F79CE2;
+    max-width: 310px;
+    padding: 45px;
+    text-align: center;
+    
+}
+.login-form form input{
+    width: 90%;
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border-left: 2px solid purple;
+    border-radius: 20px;
+
+
+}
+.login-form form button{
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: purple;
+    color: pink;
+    font-family: cosmic, sans-serif;
+    border-radius: 10px;
+    border-bottom: 4px solid black;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+        
+      
+
+footer{
+    background-color: #D5C1CD;
+    
+    padding: 15px;
+}
+
+footer .pages{
+   text-align: center;
+   
+}
+footer .pages h3{
+    color: black;
+    font-size: 25px;
+    font-family: 'Abril Fatface', cursive;
+    
+    font-weight: bolder;
+}
+footer .pages a{
+    text-decoration: none;
+    margin: 10px;
+    color: purple;
+    font-size: 15px;
+    font-family: 'Abril Fatface', cursive;
+}
+footer .pages a:hover{
+    color:brown;
+    font-size: 18px;
+    transition: 00.5s;
+    text-decoration: underline;
+}
+footer .doc{
+    text-align: center;
+ }
+ footer .doc h3{
+     color: black;
+     font-size: 25px;
+     font-family: 'Abril Fatface', cursive;
+     padding-top: 7px;
+     font-weight: bolder;
+ }
+ footer .doc a{
+     text-decoration: none;
+     text-align: center;
+     margin: 10px;
+     color: purple;
+     font-size: 15px;
+     font-family: 'Abril Fatface', cursive;
+ }
+ footer .doc a:hover{
+     color:brown;
+     font-size: 18px;
+     transition: 00.5s;
+     text-decoration: underline;
+ }
+ footer .social{
+    text-align: center;
+ }
+ footer .social h3{
+     color: black;
+     font-size: 25px;
+     font-family: 'Abril Fatface', cursive;
+     padding-top: 7px;
+     font-weight: bolder;
+ }
+ footer .contact{
+    text-align: center;
+ }
+ footer .contact h3{
+     color: black;
+     font-size: 25px;
+     font-family: 'Abril Fatface', cursive;
+     padding-top: 7px;
+     font-weight: bolder;
+ }
+ footer p{
+     padding-top: 105px;
+ }
+ footer .social a{
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    color: purple;
+    font-size: 30px;
+}
+footer .social a:hover{
+    color:brown;
+    font-size: 34px;
+    transition: 00.5s;
+}
+footer .contact a{
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    color: purple;
+    font-size: 30px;
+}
+footer .contact a:hover{
+    color:brown;
+    font-size: 34px;
+    transition: 00.5s;
+}
