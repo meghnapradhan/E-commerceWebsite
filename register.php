@@ -1,4 +1,35 @@
 
+<?php
+
+$server='localhost';
+$username='root';
+$password='';
+$database='shop';
+
+$conn= mysqli_connect($server,$username,$password,$database);
+
+if($conn->connect_error){
+    die("Connection failed:".$conn->connect_error);
+
+}
+echo"";
+if(isset($_POST['submit'])){
+    $name=$_POST['name'];
+    $email=$_POST['email'];
+   
+    $password=$_POST['password'];
+
+    $sql="INSERT INTO `users`(`name`, `email`, `password`) VALUES ('$name','$email','$password')";
+    
+    if(mysqli_query($conn,$sql)){
+        echo "Records inserted successfully";
+    }else{
+        echo "ERROR: Could not able to executec $sql. " .mysqli_error($conn);
+    }
+
+
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +37,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width", initial-scale=1.0">
-    <title>Ecommerce Webpage|About Us</title>
+    <title>Ecommerce Webpage|Login</title>
     
     
 
@@ -29,44 +60,44 @@
 
         </div>
     </nav>
-    <div class="about-us">
-        <h2>About Us</h2>
-        <div class="about-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin diam id justo porta 
-                commodo. Aliquam rutrum sem nunc, id iaculis lacus rhoncus at. Quisque sodales sapien eget 
-                ipsum accumsan, non mattis ante euismod. Sed eget sagittis metus. Morbi ut ornare augue, 
-                non tincidunt velit. Praesent laoreet pharetra orci ac congue. Sed aliquet mi id tristique 
-                pellentesque. Donec at mollis est. In hac habitasse platea dictumst. Donec molestie eget nulla 
-                sit amet luctus. Donec vel venenatis ipsum. Nam ante ex, ullamcorper vitae interdum quis, 
-                convallis a nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
-                ac turpis egestas. Vestibulum luctus ipsum risus, vel malesuada dui faucibus ac. 
-                Donec finibus, velit a sollicitudin faucibus, ex ex fermentum magna, eget rhoncus
-                 lorem orci eget mi. Mauris ac mollis libero.</p>
-        </div><hr>
-        <h2>Our Mission</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin diam id justo porta 
-            commodo. Aliquam rutrum sem nunc, id iaculis lacus rhoncus at. Quisque sodales sapien eget 
-            ipsum accumsan, non mattis ante euismod. Sed eget sagittis metus. Morbi ut ornare augue, 
-            non tincidunt velit. Praesent laoreet pharetra orci ac congue. Sed aliquet mi id tristique 
-            pellentesque.</p>
+    <div class="login-page">
+        <h2 id="register">Register</h2>
+        <div class="login-form">
+            
+            <form method="POST">
+                <input type="text" placeholder="Name" name="name" required><br>
+                <input type="email" placeholder="email id" name="email" required><br>
+                <input type="password" placeholder="password" name="password" required><br>
+                <input type="password" placeholder="confirm password" required><br>
+                <button type="submit" name="submit">Register</button>
+                <p >Already Registered?<a href="login.php">Login</a></p>
+            </form>
+            </div>
+            
+
+        </div>
     </div>
-    
+
+
     <div class="feed">
         <h2>Write a Review</h2>
         <div class="feed_form">
             <form name="submit-review" method="POST">
-                <input type="text"  name="name" placeholder="Name" required><br>
+                <input type="text"  name="Name" placeholder="Name" required><br>
                 
                 <input type="email"  name="Email ID" placeholder="Email ID" required><br>
-              
+                
                 <input type="number"  name="Number" placeholder="Contact No." required><br>
-               
+                
                 <textarea rows="5" cols="20" name="Review" placeholder="Write your review" required></textarea><br>
                 <button type="submit" name="resubmit">Submit</button>
             </form>
         </div>
     </div>
-        
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+    
+     
     <footer>
         
         <div class="footer1">
@@ -98,12 +129,12 @@
     </div>
         <p>Copyright &copy; 2022 cake shop. All rights reserved</p>
     </footer>
+    
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-
 
 </body>
 </html>
